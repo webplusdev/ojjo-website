@@ -1,0 +1,48 @@
+.shop {
+    padding: 100px 0;
+    background-color: $accent;
+    &__container {
+        text-align: center;
+    }
+
+    &__subtitle {
+        color: #fff;
+    }
+
+    &__title {
+        color: #fff;
+        margin-top: 15px;
+    }
+
+    &__text {
+        color: #fff;
+        @include adaptive(font-size, 18, 16, 1);
+        line-height: 140%;
+        @include adaptive(margin-top, 45, 25, 1);
+        @media (max-width: $md4 + px) {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        background-color: #fff;
+        color: $accent;
+        @include adaptive(margin-top, 60, 40, 1);
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $accent;
+        padding: 0.83em 2.333em;
+        transition: box-shadow .3s ease 0s;
+        @include adaptive(font-size, 18, 14, 1);
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 1px 1px 6px rgba(255, 255, 255, 0.8);
+                color: $accent;
+            }
+        }
+    }
+}
+

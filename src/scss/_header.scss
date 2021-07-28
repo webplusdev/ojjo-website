@@ -1,0 +1,145 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    transition: background-color .5s ease 0s;
+    &__container {
+        padding: 25px 15px;
+    }
+
+    &__logo {
+        max-width: 216px;
+        img {
+            width: 100%;
+        }
+        @media (max-width: $md2 + px) {
+            margin: 0;
+        }
+    }
+}
+
+.menu {
+    padding-top: 18px;
+    color: $whiteColor;
+    position: relative;
+    @media (max-width: $md2 + px) {
+        margin-right: 0;
+    }
+    &__body {
+        @media (max-width: $md2 + px) {
+            position: absolute;
+            right: -1000px;
+            top: -27px;
+            bottom: 0;
+            background-color: $whiteColor;
+            transition: right .3s ease 0s;
+            text-align: center;
+            height: 100vh;  
+            overflow: auto;
+            padding: 60px 0;
+            z-index: 5;
+            .menu__list {
+                flex-direction: column;
+                align-items: center;
+                max-height: 450px;
+            }
+            .menu__item {
+                padding: 20px 50px;
+                width: 100%;
+                &:not(:nth-child(1)) {
+                    border-top: 1px solid $accent;
+                }
+            }
+            .menu__link {
+                color: $accent;
+                font-size: 24px;
+                font-weight: 700;
+            }
+                
+            &.active {
+                right: -5px;
+            }
+        }
+        @media (max-width: 380px) {
+            top: -39px;
+        }
+
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+    
+    &__link {
+        font-size: 14px;
+        line-height: 150%;
+        position: relative;
+        &::after {
+            content: '';
+            width: 0;
+            background-color: #fff;
+            height: 1px;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: width .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+.action {
+    font-size: 14px;
+    &__search {
+        padding-left: 30px;
+        position: relative;
+        &::before {
+            content: '\e905';
+            font-family: 'icomoon';
+            position: absolute;
+            left: 0;
+        }
+        @media (max-width: $md4 + px) {
+            display: none;
+        }
+    }
+
+    &__sign {
+        padding: .5em 1em;
+        @media (max-width: $md4 + px) {
+            background-color: $accent;
+        }
+    }
+    @media (max-width: $md2 + px) {
+        font-size: 16px;
+    }
+
+
+}
+
+
+.account {
+    font-size: 16px;
+    &__profile {
+        cursor: pointer;
+    }
+    &__favorite {
+        cursor: pointer;
+    }
+    @media (max-width: $md2 + px) {
+        font-size: 20px;
+    }
+    @media (max-width: $md4 + px) {
+        display: none;
+    }
+}
+

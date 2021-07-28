@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojjo</title>
+    <link rel="shortcut icon" type="image/svg" href="/img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__row row d-flex align-items-center justify-content-between">
+                    <div class="header__menu menu col-lg-4 col-sm-1 col-2 order-lg-1 order-sm-4 order-4">
+                        <div class="menu__body">
+                            <ul class="menu__list d-flex justify-content-between">
+                                <li class="menu__item"><a class="menu__link" href="#">Контрагентам</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Дизайнерам</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu__icon icon-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <a class="header__logo col-lg-4 col-sm-2 col-3 justify-content-sm-center order-lg-2 order-sm-1 order-1"
+                        href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <div
+                        class="header__actions action col-lg-3 col-sm-7 col-6 d-flex justify-content-sm-end justify-content-center  order-lg-3 order-sm-2 order-2">
+                        <button type="button" class="action__search me-sm-4">Поиск</button>
+
+                        <button type="button" class="action__sign">Вход/Регистрация</button>
+                    </div>
+                    <div
+                        class="header__account account col-lg-1 col-md-1 col-sm-2 col-2 d-sm-flex justify-content-lg-between justify-content-md-end justify-content-sm-start justify-content-end order-lg-4 order-sm-3 order-3">
+                        <div class="account__profile icon-account me-lg-3 me-sm-4 me-3"></div>
+                        <div class="account__favorite icon-favorite"></div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__main-screen main-screen">
+                <div class="main-screen__bg ibg">
+                    <div class="main-screen__container container d-flex align-items-end justify-content-center">
+                        <div class="main-screen__content col-12 d-flex flex-column align-items-center">
+                            <div class="main-screen__search-form search-form ">
+                                <form action="#" class="search-form__wrapper">
+                                    <input class="search-form__input" type="search"
+                                        placeholder="Введите категорию изделия..." required>
+                                    <button class="search-form__btn icon-magnifier" type="submit"></button>
+                                </form>
+                            </div>
+                            <h1 class="main-screen__title col-md-6 col-12">Долго, дорого, богато!</h1>
+                            <a href="#" class="main-screen__link col-lg-4 col-sm-5 col-10">Каталог изделий</a>
+                            <div class="main-screen__brands brand d-flex justify-content-center col-12">
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                                <div class="brand__item"><img src="img/main/brand.svg" alt="brand"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="ibg__img" src="img/main/bg.svg" alt="bg">
+                </div>
+            </section>
+            <section class="page__catalog catalog">
+                <div class="catalog__container container">
+                    <div class="catalog__subtitle subtitle">К мероприятиям</div>
+                    <h2 class="catalog__title title col-12">Настоящая красота здесь!</h2>
+
+                    <div class="catalog__tabs tabs">
+                        <div class="tabs__tab-top tabs__tab-top_desktop">
+                            <div class="tabs__tab-inner d-flex justify-content-center flex-wrap tabs__tab-top_desktop">
+                                <div class="tabs__tab-option active flex-grow-1 ">Свадьба</div>
+                                <div class="tabs__tab-option flex-grow-1">Мужу</div>
+                                <div class="tabs__tab-option flex-grow-1">Жене</div>
+                                <div class="tabs__tab-option flex-grow-1">Партнёру</div>
+                                <div class="tabs__tab-option flex-grow-1">Коллекции</div>
+                                <div class="tabs__tab-option flex-grow-1">Редкость</div>
+                            </div>
+                        </div>
+                        <select class="tabs__tab-top tabs__tab-top_mobile">
+                            <option class="tabs__tab-selection" value="0">Свадьба</option>
+                            <option class="tabs__tab-selection" value="1">Мужу</option>
+                            <option class="tabs__tab-selection" value="2">Жене</option>
+                            <option class="tabs__tab-selection" value="3">Партнёру</option>
+                            <option class="tabs__tab-selection" value="4">Коллекции</option>
+                            <option class="tabs__tab-selection" value="5">Редкость</option>
+                        </select>
+                        <div class="tabs__tab-contents">
+                            <div class="tabs__tab-content row active">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/ring.svg" alt="item">
+                                        <div class="tabs__name">Кольца</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/earring.svg" alt="item">
+                                        <div class="tabs__name">Серьги</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg  d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/drop.svg" alt="item">
+                                        <div class="tabs__name">Подвески</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/stud.svg" alt="item">
+                                        <div class="tabs__name">Запонки</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/bracelet.svg" alt="item">
+                                        <div class="tabs__name">Браслеты</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/watch.svg" alt="item">
+                                        <div class="tabs__name">Часы</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tabs__tab-content row">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg  d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/drop.svg" alt="item">
+                                        <div class="tabs__name">Подвески</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/stud.svg" alt="item">
+                                        <div class="tabs__name">Запонки</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tabs__tab-content row">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/stud.svg" alt="item">
+                                        <div class="tabs__name">Запонки</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tabs__tab-content row">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/bracelet.svg" alt="item">
+                                        <div class="tabs__name">Браслеты</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/stud.svg" alt="item">
+                                        <div class="tabs__name">Запонки</div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="tabs__tab-content row">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/bracelet.svg" alt="item">
+                                        <div class="tabs__name">Браслеты</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/watch.svg" alt="item">
+                                        <div class="tabs__name">Часы</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tabs__tab-content row">
+                                <a href="#" class="tabs__item col-lg-4 col-sm-6 col-12">
+                                    <div class="tabs__img ibg d-flex align-items-end justify-content-center">
+                                        <img class="ibg__img" src="img/main/products/watch.svg" alt="item">
+                                        <div class="tabs__name">Часы</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__shop shop">
+                <div class="shop__container container">
+                    <div class="shop__row row d-flex flex-column align-items-center">
+                        <div class="shop__subtitle subtitle col-xl-3 col-md-5">Не знаете, что выбрать?</div>
+                        <h2 class="shop__title title col-xl-6 col-md-8">Посетите наши салоны в Москве</h2>
+                        <p class="shop__text col-xl-8 col-sm-10 col-11">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                            Ut duis
+                            tortor
+                            vitae
+                            pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque.
+                            <span> Suspendisse
+                                donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut
+                                ultrices
+                                imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra
+                                ipsum.</span>
+                        </p>
+                        <a href="#" class="shop__btn button col-xl-3 col-sm-5 col-8">Наши салоны</a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="page__articles articles">
+                <div class="articles__container container">
+                    <div class="articles__row row d-flex flex-column align-items-center">
+                        <div class="articles__subtitle subtitle">Полезные статьи</div>
+                        <h2 class="articles__title title">Лучшие советы по подбору дорогих подарков</h2>
+                        <div class="articles__items row d-sm-flex flex-lg-row flex-column align-items-center">
+                            <a href="#" class="articles__item col-lg-4 col-md-11">
+                                <div
+                                    class="articles__img ibg d-flex flex-column justify-content-end align-items-center">
+                                    <img class="ibg__img" src="img/main/blog/blog1.svg" alt="blog">
+                                    <div class="articles__name">Как выбрать часы для своей будущей жены</div>
+                                </div>
+                            </a>
+                            <a href="#" class="articles__item col-lg-4 col-md-11">
+                                <div
+                                    class="articles__img ibg d-flex flex-column justify-content-end align-items-center">
+                                    <img class="ibg__img" src="img/main/blog/blog2.svg" alt="blog">
+                                    <div class="articles__name">Запонки для мужа: 7 ключевых правил покупки аксессуара
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="articles__item col-lg-4 col-md-11">
+                                <div
+                                    class="articles__img ibg d-flex flex-column justify-content-end align-items-center">
+                                    <img class="ibg__img" src="img/main/blog/blog3.svg" alt="blog">
+                                    <div class="articles__name">Как выбрать обручальные кольца молодоженам</div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="articles__btn button col-xl-3 col-lg-4 col-sm-6 col-10">Читать наш блог</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__gallery gallery">
+                <div class="gallery__container container">
+                    <div class="gallery__subtitle subtitle">#ojjo_jewerly</div>
+                    <h2 class="gallery__title title">Мы в социальных сетях</h2>
+                    <div data-fancybox
+                        class="gallery__wrapper d-flex flex-md-wrap justify-content-md-center justify-content-start">
+                        <a data-fslightbox="gallery_ojjo" data-type="video" href="img/main/gallery/video1.svg"
+                            class="gallery__item gallery__item_video ibg">
+                            <img class="ibg__img" src="img/main/gallery/video1.svg" alt="gallery">
+                        </a>
+                        <a data-fslightbox="gallery_ojjo" data-type="image" href="img/main/gallery/image.svg"
+                            class="gallery__item gallery__item_img ibg">
+                            <img class="ibg__img" src="img/main/gallery/image.svg" alt="gallery">
+                        </a>
+                        <a data-fslightbox="gallery_ojjo" data-type="image" href="img/main/gallery/image-2.svg"
+                            data-lg-size="1600-2400" class="gallery__item gallery__item_img ibg">
+                            <img class="ibg__img" src="img/main/gallery/image-2.svg" alt="gallery">
+                        </a>
+                        <a data-fslightbox="gallery_ojjo" data-type="image" href="img/main/gallery/image-1.svg"
+                            data-lg-size="1600-2400" class="gallery__item gallery__item_img ibg">
+                            <img class="ibg__img" src="img/main/gallery/image-1.svg" alt="gallery">
+                        </a>
+                        <a data-fslightbox="gallery_ojjo" data-type="image" href="img/main/gallery/image-3.svg"
+                            data-lg-size="1600-2400" class="gallery__item gallery__item_img ibg">
+                            <img class="ibg__img" src="img/main/gallery/image-3.svg" alt="gallery">
+                        </a>
+                        <a data-fslightbox="gallery_ojjo" data-type="video" href="img/main/gallery/video2.svg"
+                            data-lg-size="1600-2400" class="gallery__item gallery__item_video ibg">
+                            <img class="ibg__img" src="img/main/gallery/video2.svg" alt="gallery">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__mail mail">
+                <div class="mail__container container">
+                    <div class="mail__subtitle subtitle">Полезные советы и персональные предложения</div>
+                    <h2 class="mail__title title">Эксклюзивная рассылка</h2>
+                    <div
+                        class="mail__content d-flex flex-md-row flex-column justify-content-md-center align-items-center">
+                        <ul class="mail__benefit">
+                            <li class="mail__benefit-item">Личный менеджер</li>
+                            <li class="mail__benefit-item">Доставка и оформление</li>
+                            <li class="mail__benefit-item">Индивидуальный дизайн</li>
+                        </ul>
+                        <div class="mail__wrapper">
+                            <form action="#" class="mail__form d-flex flex-sm-row flex-column">
+                                <input placeholder="Ваш E-mail" type="email" class="mail__input" required>
+                                <button type="submit" class="mail__btn button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div data-spollers="767.98,max" class="footer__main row d-flex justify-content-center">
+                    <div class="footer__col footer-links col-lg-3 col-md-6 col-12">
+                        <div data-spoller class="footer__col-title footer-links__title">Полезные ссылки</div>
+                        <div class="footer-payment__content">
+                            <ul class="footer-links__list">
+                                <li class="footer-links__item"><a href="#" class="footer-links__link">Доставка</a></li>
+                                <li class="footer-links__item"><a href="#" class="footer-links__link">Оплата</a></li>
+                                <li class="footer-links__item"><a href="#" class="footer-links__link">Акции</a></li>
+                                <li class="footer-links__item"><a href="#" class="footer-links__link">Политика
+                                        конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col footer-payment col-lg-3 col-md-6">
+                        <div data-spoller class="footer__col-title footer-payment__title">Оплата</div>
+                        <div class="footer-payment__content">
+                            <div class="footer__col-text footer-payment__text">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Ullamcorper
+                                justo, nec, pellentesque.</div>
+                            <div class="footer-payment__icons">
+                                <img src="img/icons/visa.svg" alt="pay">
+                                <img src="img/icons/mastercard.svg" alt="pay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col footer-contacts col-lg-3 col-md-6">
+                        <div data-spoller class="footer__col-title footer-contacts__title">Контакты</div>
+                        <div class="footer-contacts__content">
+                            <ul class="footer-contacts__list d-md-block d-flex flex-column align-items-center">
+                                <li class="footer-contacts__item footer-contacts__item_phone"><a href="tel:+88122345655"
+                                        class="footer-contacts__link">8
+                                        (812) 234-56-55</a></li>
+                                <li class="footer-contacts__item footer-contacts__item_phone"><a href="tel:+88122345655"
+                                        class="footer-contacts__link">8
+                                        (812) 234-56-55</a></li>
+                                <li class="footer-contacts__item footer-contacts__item_mail"><a
+                                        href="mailto:ojjo@ojjo.ru" class="footer-contacts__link">ojjo@ojjo.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col footer-social col-lg-3 col-md-6">
+                        <div data-spoller class="footer__col-title footer-social__title">Социальные сети</div>
+                        <div class="footer-social__content">
+                            <div class="footer__col-text footer-social__text">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit. Ullamcorper
+                                justo, nec, pellentesque.</div>
+                            <div class="footer-social__links">
+                                <a href="https://www.youtube.com/" class="footer-social__link icon-yt"></a>
+                                <a href="https://www.vk.com/" class="footer-social__link icon-vk"></a>
+                                <a href="https://www.facebook.com/" class="footer-social__link icon-facebook"></a>
+                                <a href="https://web.telegram.org/z/" class="footer-social__link icon-telegram"></a>
+                                <a href="https://www.etsy.com/" class="footer-social__link icon-etsy"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <ul
+                        class="footer__list d-flex justify-content-between flex-wrap flex-md-row flex-column align-items-center">
+                        <li class="footer__item">(c) 2020 OJJO jewelry</li>
+                        <li class="footer__item"><a href="#" class="footer__link">Договор публичной офферты</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Контрагентам</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Сделано Figma.info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/script.min.js"></script>
+</body>
+
+</html>

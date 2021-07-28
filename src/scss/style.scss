@@ -1,0 +1,88 @@
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+
+@import 'ibg';
+@import 'icon-menu';
+
+html, body {
+    font-family: 'Gilroy';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: $whiteColor;
+    text-decoration: none;
+    @media (any-hover: hover) {
+        &:hover {
+            color: $whiteColor;
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: $whiteColor;
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 1;
+  }
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page {
+    flex: 1;
+}
+
+.title {
+    font-family: $notoFont;
+    font-weight: 700;
+    @include adaptive(font-size, 30, 24, 1);
+    line-height: 1.366em;
+    text-align: center;
+    color: $accent;
+}
+
+.subtitle {
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    color: $accent;
+}
+
+@import 'header';
+@import 'main-screen';
+@import 'catalog';
+@import 'shop';
+@import 'articles';
+@import 'gallery';
+@import 'mail';
+@import 'footer';

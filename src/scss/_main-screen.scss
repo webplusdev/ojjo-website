@@ -1,0 +1,142 @@
+.main-screen {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #FFFFFF;
+        bottom: 120px;
+    }
+    &__bg {
+        min-height: 100vh;
+    }
+
+    &__container {
+        min-height: 100vh;
+    }
+
+    &__title {
+        font-family: $notoFont;
+        font-weight: 700;
+        @include adaptive(line-height, 49, 32, 1);
+        text-align: center;
+        color: #FFFFFF;
+        @include adaptive(font-size, 36, 28, 1);
+        @include adaptive(margin-top, 70, 50, 1);
+    }
+
+    &__link {
+        text-align: center;
+        margin-top: 50px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        padding: .8em 1.9em;
+        transition: all .3s ease 0s;
+        @include adaptive(margin-top, 50, 30, 1);
+        @include adaptive(font-size, 18, 12, 1);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #fff;
+                color: $accent
+            }
+        }
+    }
+
+    &__brands {
+        @include adaptive(margin-top, 110, 30, 1);
+    }
+
+}
+
+
+.search-form {
+    width: 50%;
+    opacity: 0;
+    transition: all .3s ease 0s;
+    position: relative;
+    &__input {
+        width: 100%;
+        padding: 1em 2em 1em 1em;
+        appearance: none;
+        @media (max-width: $md4 + px) {
+            font-size: 16px;
+        }
+        @media (max-width: $md5 + px) {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        background-color: $accent;
+        padding: 0.625em 0.83em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 4;
+        font-size: 24px;
+        @media (max-width: $md4 + px) {
+            font-size: 20px;
+        }
+        @media (max-width: $md5 + px) {
+            font-size: 18px;
+        }
+    }
+    &.active {
+        opacity: 1;
+    }
+    @media (max-width: $md3 + px) {
+        width: 80%;
+    }
+}
+
+.brand {
+    padding: 30px 0;
+    &__item {
+        min-width: 160px;
+        img {
+           width: 100%;
+        }
+        &:not(:last-child), &:not(:first-child){
+            padding: 0 15px;
+        }
+        &:first-child {
+            padding-right: 15px;
+        }
+        &:last-child {
+            padding-left: 15px;
+        }
+        &:not(:first-child){
+            border-left: 1px solid #FFFFFF;
+        }
+        @media (max-width: $md2 + px) {
+            &:nth-child(5), &:last-child {
+                display: none;
+            }
+        } 
+        @media (max-width: $md3 + px) {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+
+        @media (max-width: $md4 + px) {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+        @media (max-width: $md5 + px) {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+    
+}
+
