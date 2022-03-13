@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://webplusdev.github.io/portfolio-website/ojjo-website",
+  "homepage": "https://webplusdev.github.io/ojjo-website",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.4",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cli": "^2.3.0",
@@ -26,7 +27,6 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
-    "bootstrap": "^5.0.2",
-    "gh-pages": "^3.2.3"
+    "bootstrap": "^5.0.2"
   }
 }
