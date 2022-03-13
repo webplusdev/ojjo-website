@@ -107,9 +107,14 @@
             font-family: 'icomoon';
             position: absolute;
             left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         @media (max-width: $md4 + px) {
-            display: none;
+            span {
+                display: none;
+            }
+            
         }
     }
 
@@ -118,9 +123,9 @@
         @media (max-width: $md4 + px) {
             background-color: $accent;
         }
-    }
-    @media (max-width: $md2 + px) {
-        font-size: 16px;
+        @media (max-width: $md4 + px) {
+            font-size: 12px;
+        }
     }
 
 

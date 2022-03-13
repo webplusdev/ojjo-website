@@ -1,17 +1,5 @@
-import { ibg } from './_ibg.js';
-import { resizeWindow } from './_resize.js';
-import { scrollWatch } from './_scrollWatch.js';
-import { spoilerCreate } from './_spoiler.js';
-import { tabCreate } from './_tabs.js';
-import './_fslightbox.js';
 
 function main() {
-
-    resizeWindow();
-    ibg();
-    scrollWatch();
-    spoilerCreate();
-    tabCreate();
 
     const menu_icon = document.querySelector('.icon-menu');
     const menu_body = document.querySelector('.menu__body');

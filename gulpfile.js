@@ -57,7 +57,8 @@ function ttfTowoff2() {
 function scripts() {
     return src([
         //'node_modules/jquery/dist/jquery.js',
-        'src/js/script.js',
+        'src/js/_*.js',
+        'src/js/script.js'
     ])
         .pipe(concat('script.min.js'))
         .pipe(uglify())

@@ -1,6 +1,5 @@
 "use strict"
 
-export function spoilerCreate() {
 
 	const spollersArray = document.querySelectorAll('[data-spollers]');
 
@@ -251,5 +250,5 @@ export function spoilerCreate() {
 		}
 	}
 	*/
-}
+
 
